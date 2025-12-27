@@ -1,0 +1,3896 @@
+createOrReplace
+
+	model Model
+		culture: en-US
+		defaultPowerBIDataSourceVersion: powerBI_V3
+		sourceQueryCulture: en-US
+		dataAccessOptions
+			legacyRedirects
+			returnErrorValuesAsNull
+
+		table dim__promotion
+			lineageTag: 2bf8e5c3-be41-44d7-88e1-d4093b83d742
+			sourceLineageTag: [tpc_ds__sf_100].[dim__promotion]
+
+			column promo_id
+				dataType: string
+				lineageTag: bef2a615-6567-4fc7-8589-b7a7a7677fe5
+				sourceLineageTag: promo_id
+				summarizeBy: none
+				sourceColumn: promo_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column channel_dmail
+				dataType: string
+				lineageTag: bfdf1448-28cb-4423-8a4f-1c7f66b2823f
+				sourceLineageTag: channel_dmail
+				summarizeBy: none
+				sourceColumn: channel_dmail
+
+				annotation SummarizationSetBy = Automatic
+
+			column channel_email
+				dataType: string
+				lineageTag: c619f340-d851-435b-b2d6-716d530de41e
+				sourceLineageTag: channel_email
+				summarizeBy: none
+				sourceColumn: channel_email
+
+				annotation SummarizationSetBy = Automatic
+
+			column channel_tv
+				dataType: string
+				lineageTag: 5597ec26-7917-49a0-aee6-a454336a804d
+				sourceLineageTag: channel_tv
+				summarizeBy: none
+				sourceColumn: channel_tv
+
+				annotation SummarizationSetBy = Automatic
+
+			column discount_active
+				dataType: string
+				lineageTag: 0c788fa6-0e9f-47c1-8374-28d8d68d11a6
+				sourceLineageTag: discount_active
+				summarizeBy: none
+				sourceColumn: discount_active
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__promotion
+				dataType: int64
+				formatString: 0
+				lineageTag: a8dffa27-591e-4d83-8e71-ad41c2abf989
+				sourceLineageTag: _key__dim__promotion
+				summarizeBy: none
+				sourceColumn: _key__dim__promotion
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__promotion = entity
+				mode: directLake
+				source
+					entityName: dim__promotion
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__customer
+			lineageTag: c1019dad-b371-4803-bda7-f38f24589dad
+			sourceLineageTag: [tpc_ds__sf_100].[dim__customer]
+
+			column customer_id
+				dataType: string
+				lineageTag: 0dd85435-1533-4802-9e44-85a0724c187a
+				sourceLineageTag: customer_id
+				summarizeBy: none
+				sourceColumn: customer_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column first_name
+				dataType: string
+				lineageTag: b1e363b9-b6a4-46bf-b338-deec28b5f44e
+				sourceLineageTag: first_name
+				summarizeBy: none
+				sourceColumn: first_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column last_name
+				dataType: string
+				lineageTag: c5c15304-295f-4da9-a9a7-4cb625a1e423
+				sourceLineageTag: last_name
+				summarizeBy: none
+				sourceColumn: last_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column birth_year
+				dataType: int64
+				formatString: 0
+				lineageTag: feaf9d19-b9c4-4eaa-927a-f3b8fff80cd3
+				sourceLineageTag: birth_year
+				summarizeBy: none
+				sourceColumn: birth_year
+
+				annotation SummarizationSetBy = Automatic
+
+			column country
+				dataType: string
+				lineageTag: 9dbcc989-9362-4377-91b3-2a381bc0d1fd
+				sourceLineageTag: country
+				summarizeBy: none
+				sourceColumn: country
+
+				annotation SummarizationSetBy = Automatic
+
+			column state
+				dataType: string
+				lineageTag: 6099c91c-bdb3-487c-9aa5-d808226ba591
+				sourceLineageTag: state
+				summarizeBy: none
+				sourceColumn: state
+
+				annotation SummarizationSetBy = Automatic
+
+			column county
+				dataType: string
+				lineageTag: 3abb1ed7-9dc8-4ce3-ae24-f36bcc7ff259
+				sourceLineageTag: county
+				summarizeBy: none
+				sourceColumn: county
+
+				annotation SummarizationSetBy = Automatic
+
+			column city
+				dataType: string
+				lineageTag: 254bb6a9-1064-479b-90a4-f51a04da24e4
+				sourceLineageTag: city
+				summarizeBy: none
+				sourceColumn: city
+
+				annotation SummarizationSetBy = Automatic
+
+			column zip
+				dataType: string
+				lineageTag: 310bf744-3f07-4ece-a9c5-b1eaadac5d77
+				sourceLineageTag: zip
+				summarizeBy: none
+				sourceColumn: zip
+
+				annotation SummarizationSetBy = Automatic
+
+			column gender
+				dataType: string
+				lineageTag: c7c4129a-b8b4-4507-81de-0e14d8888b04
+				sourceLineageTag: gender
+				summarizeBy: none
+				sourceColumn: gender
+
+				annotation SummarizationSetBy = Automatic
+
+			column marital_status
+				dataType: string
+				lineageTag: 51693d0a-3c9f-4ee9-b44e-c1a085ba0388
+				sourceLineageTag: marital_status
+				summarizeBy: none
+				sourceColumn: marital_status
+
+				annotation SummarizationSetBy = Automatic
+
+			column education_status
+				dataType: string
+				lineageTag: 4aaf20f9-4fcf-4574-8f5e-51b2628df8d7
+				sourceLineageTag: education_status
+				summarizeBy: none
+				sourceColumn: education_status
+
+				annotation SummarizationSetBy = Automatic
+
+			column buy_potential
+				dataType: string
+				lineageTag: cfec564d-41a1-4b27-af11-62e52c82dc85
+				sourceLineageTag: buy_potential
+				summarizeBy: none
+				sourceColumn: buy_potential
+
+				annotation SummarizationSetBy = Automatic
+
+			column income_lower
+				dataType: int64
+				formatString: 0
+				lineageTag: 51805d44-ba00-44e2-bee8-ea7e8e3a311d
+				sourceLineageTag: income_lower
+				summarizeBy: none
+				sourceColumn: income_lower
+
+				annotation SummarizationSetBy = Automatic
+
+			column income_upper
+				dataType: int64
+				formatString: 0
+				lineageTag: ebcac7b5-64d0-4132-b66c-ee1680faf831
+				sourceLineageTag: income_upper
+				summarizeBy: none
+				sourceColumn: income_upper
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: fede9abb-a38a-452b-9e63-8c7a2f074948
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__customer = entity
+				mode: directLake
+				source
+					entityName: dim__customer
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__web_site
+			lineageTag: eb27fee4-591e-488d-a9d8-0957ab689670
+			sourceLineageTag: [tpc_ds__sf_100].[dim__web_site]
+
+			column web_site_id
+				dataType: string
+				lineageTag: edaed418-dcb4-47dd-8322-82a0d71261d2
+				sourceLineageTag: web_site_id
+				summarizeBy: none
+				sourceColumn: web_site_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column web_name
+				dataType: string
+				lineageTag: 35ee6eba-1087-4891-8b4c-f0aec00c1fb6
+				sourceLineageTag: web_name
+				summarizeBy: none
+				sourceColumn: web_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column company_id
+				dataType: int64
+				formatString: 0
+				lineageTag: 474b9f1a-ce51-4e9f-ab09-1a78c0467f20
+				sourceLineageTag: company_id
+				summarizeBy: none
+				sourceColumn: company_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column company_name
+				dataType: string
+				lineageTag: 5193df40-9549-4f5e-a14a-654c2f8c4244
+				sourceLineageTag: company_name
+				summarizeBy: none
+				sourceColumn: company_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column country
+				dataType: string
+				lineageTag: 637e797f-1730-406e-bf10-a99ef0d53e23
+				sourceLineageTag: country
+				summarizeBy: none
+				sourceColumn: country
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_site
+				dataType: int64
+				formatString: 0
+				lineageTag: 1fd529e8-6e9f-42a0-8d8c-aca097f0cbbf
+				sourceLineageTag: _key__dim__web_site
+				summarizeBy: none
+				sourceColumn: _key__dim__web_site
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__web_site = entity
+				mode: directLake
+				source
+					entityName: dim__web_site
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table _bridge
+			lineageTag: 9a7d2e42-8ae2-404f-83c4-656ec8958ec4
+			sourceLineageTag: [tpc_ds__sf_100].[_bridge]
+
+			column peripheral
+				dataType: string
+				lineageTag: 4c1f45e8-2d96-41fc-9fb1-7f4db9fe99d9
+				sourceLineageTag: peripheral
+				summarizeBy: none
+				sourceColumn: peripheral
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_returns__fee
+				dataType: double
+				lineageTag: 0bb757cc-266e-4eb1-a43b-9c37b6bf4d48
+				sourceLineageTag: _measure__catalog_returns__fee
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__net_loss
+				dataType: double
+				lineageTag: 3859e130-5614-4528-bf00-aedb73c1f6b4
+				sourceLineageTag: _measure__catalog_returns__net_loss
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__return_quantity
+				dataType: double
+				lineageTag: dfb7d204-3c34-475e-8cab-1617cf4af0ed
+				sourceLineageTag: _measure__catalog_returns__return_quantity
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__coupon_amt
+				dataType: double
+				lineageTag: e454237e-72ab-4534-8b62-e0f653bc4eaa
+				sourceLineageTag: _measure__catalog_sales__coupon_amt
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_sales_price
+				dataType: double
+				lineageTag: eee3a555-c27c-45d7-b6c6-55a80c7b768d
+				sourceLineageTag: _measure__catalog_sales__ext_sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_tax
+				dataType: double
+				lineageTag: 4d47a8e6-53b8-4c6c-bd36-cecd7eb45936
+				sourceLineageTag: _measure__catalog_sales__ext_tax
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__net_paid
+				dataType: double
+				lineageTag: 78ab8dae-6ca6-453e-9afd-dc4f1a74a019
+				sourceLineageTag: _measure__catalog_sales__net_paid
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__net_paid_inc_tax
+				dataType: double
+				lineageTag: f6529e20-ae28-4246-b095-be8352f699f9
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__net_profit
+				dataType: double
+				lineageTag: eb420275-5453-4041-a625-58b524da3d46
+				sourceLineageTag: _measure__catalog_sales__net_profit
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__quantity
+				dataType: double
+				lineageTag: 8b6b8b06-10ab-43cb-bca7-00b29a234174
+				sourceLineageTag: _measure__catalog_sales__quantity
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__inventory__qty_on_hand
+				dataType: double
+				lineageTag: 97c018c5-0e73-4dd5-bed7-153435e33aff
+				sourceLineageTag: _measure__inventory__qty_on_hand
+				summarizeBy: sum
+				sourceColumn: _measure__inventory__qty_on_hand
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__fee
+				dataType: double
+				lineageTag: 0970ee7d-32fe-42a5-85b0-77a3ff4f52a1
+				sourceLineageTag: _measure__store_returns__fee
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__net_loss
+				dataType: double
+				lineageTag: ddc396b6-6bd0-404b-a544-e39d71182275
+				sourceLineageTag: _measure__store_returns__net_loss
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__return_amt
+				dataType: double
+				lineageTag: 81326714-496c-4f2c-908d-a803a09b6b70
+				sourceLineageTag: _measure__store_returns__return_amt
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__return_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__return_quantity
+				dataType: double
+				lineageTag: e2362448-b5f7-41bb-9846-b42133563814
+				sourceLineageTag: _measure__store_returns__return_quantity
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__coupon_amt
+				dataType: double
+				lineageTag: 4c2689df-e784-40be-9ad8-f7f9fe503213
+				sourceLineageTag: _measure__store_sales__coupon_amt
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__ext_sales_price
+				dataType: double
+				lineageTag: 1f88edee-5069-4bd3-864f-cd49323d43c5
+				sourceLineageTag: _measure__store_sales__ext_sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__ext_tax
+				dataType: double
+				lineageTag: cdb7c0bd-e707-4626-a3b9-ed0896c282a4
+				sourceLineageTag: _measure__store_sales__ext_tax
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__net_paid
+				dataType: double
+				lineageTag: 3dfec5cc-4520-4207-b474-97411eb18ef3
+				sourceLineageTag: _measure__store_sales__net_paid
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__net_paid_inc_tax
+				dataType: double
+				lineageTag: 09562bb7-08d6-4a53-8654-1c4734d2a97f
+				sourceLineageTag: _measure__store_sales__net_paid_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__net_profit
+				dataType: double
+				lineageTag: d63c4da4-a709-4406-8408-8662168de271
+				sourceLineageTag: _measure__store_sales__net_profit
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__quantity
+				dataType: double
+				lineageTag: a46c23b8-3910-441e-9a68-05ffb9990cb1
+				sourceLineageTag: _measure__store_sales__quantity
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__fee
+				dataType: double
+				lineageTag: 88b5319d-3ad2-4c29-b5ff-cfb2744a3458
+				sourceLineageTag: _measure__web_returns__fee
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__net_loss
+				dataType: double
+				lineageTag: dede6415-9b39-4178-a9c3-16aef2f0f364
+				sourceLineageTag: _measure__web_returns__net_loss
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__return_amt
+				dataType: double
+				lineageTag: c38005a6-9d07-4d60-aa41-8398d4623e19
+				sourceLineageTag: _measure__web_returns__return_amt
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__return_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__return_quantity
+				dataType: double
+				lineageTag: 972f6729-88c4-45e5-9d87-ae3eb88222e9
+				sourceLineageTag: _measure__web_returns__return_quantity
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__coupon_amt
+				dataType: double
+				lineageTag: 04f6f10f-fafa-4779-8949-7c7c4253f081
+				sourceLineageTag: _measure__web_sales__coupon_amt
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_sales_price
+				dataType: double
+				lineageTag: 1fba011f-604b-4d84-8e92-3a1492101850
+				sourceLineageTag: _measure__web_sales__ext_sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_tax
+				dataType: double
+				lineageTag: 3acfa30a-e89c-4efd-92a2-5d16eb21b451
+				sourceLineageTag: _measure__web_sales__ext_tax
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__net_paid
+				dataType: double
+				lineageTag: ab9174b1-dea9-484f-b397-93a29329574b
+				sourceLineageTag: _measure__web_sales__net_paid
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__net_paid_inc_tax
+				dataType: double
+				lineageTag: 385b9ab3-efaf-4745-bbdc-cf81b1952ce4
+				sourceLineageTag: _measure__web_sales__net_paid_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__net_profit
+				dataType: double
+				lineageTag: 50b7e453-3023-4181-8d24-2e194ee0ff77
+				sourceLineageTag: _measure__web_sales__net_profit
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__quantity
+				dataType: double
+				lineageTag: d1941c32-efd1-45cd-a3a9-523a0610e4d5
+				sourceLineageTag: _measure__web_sales__quantity
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _key__dim__call_center
+				dataType: int64
+				formatString: 0
+				lineageTag: 3897431d-2f29-4656-ba73-f4f474ecafb1
+				sourceLineageTag: _key__dim__call_center
+				summarizeBy: none
+				sourceColumn: _key__dim__call_center
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__catalog_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 4aa653d9-79c9-4706-b941-fddf2da97b80
+				sourceLineageTag: _key__dim__catalog_page
+				summarizeBy: none
+				sourceColumn: _key__dim__catalog_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: 2ef0fb24-71a7-44f2-8b83-0c21548784b1
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: ef050593-a7fc-4e3f-b225-280913421cd6
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date__access
+				dataType: int64
+				formatString: 0
+				lineageTag: 6c567b25-a905-45ca-bbc3-75d0eabecb18
+				sourceLineageTag: _key__dim__date__access
+				summarizeBy: sum
+				sourceColumn: _key__dim__date__access
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date__creation
+				dataType: int64
+				formatString: 0
+				lineageTag: d861c620-e33e-479d-8639-0c3a7822c30b
+				sourceLineageTag: _key__dim__date__creation
+				summarizeBy: sum
+				sourceColumn: _key__dim__date__creation
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 1dc7bd48-4ad3-4157-baf7-180b2d549294
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__promotion
+				dataType: int64
+				formatString: 0
+				lineageTag: 32355d1a-51d5-4aad-8251-5b9010eb6fc7
+				sourceLineageTag: _key__dim__promotion
+				summarizeBy: none
+				sourceColumn: _key__dim__promotion
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__reason
+				dataType: int64
+				formatString: 0
+				lineageTag: bb13abec-fa35-49b4-9703-b6b931fd53d4
+				sourceLineageTag: _key__dim__reason
+				summarizeBy: none
+				sourceColumn: _key__dim__reason
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_date
+				dataType: int64
+				formatString: 0
+				lineageTag: eea1d7a7-218a-4882-afaf-b303d2a31831
+				sourceLineageTag: _key__dim__ship_date
+				summarizeBy: sum
+				sourceColumn: _key__dim__ship_date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_mode
+				dataType: int64
+				formatString: 0
+				lineageTag: e6a1d7df-88a6-429a-a346-568d6b73b270
+				sourceLineageTag: _key__dim__ship_mode
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_mode
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__store
+				dataType: int64
+				formatString: 0
+				lineageTag: 731ea360-e38a-461b-b389-dbacbeed3922
+				sourceLineageTag: _key__dim__store
+				summarizeBy: none
+				sourceColumn: _key__dim__store
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: bd71027f-7f7d-4cce-b0a6-12c4de650348
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: dc8cb0d1-a686-4089-b470-2527db83b80a
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 3fc6a157-e79d-4415-b830-fa655e71b884
+				sourceLineageTag: _key__dim__web_page
+				summarizeBy: none
+				sourceColumn: _key__dim__web_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_site
+				dataType: int64
+				formatString: 0
+				lineageTag: e2acf365-7c24-40a2-8a8e-7c92cf6ed8cf
+				sourceLineageTag: _key__dim__web_site
+				summarizeBy: none
+				sourceColumn: _key__dim__web_site
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__catalog_returns
+				dataType: string
+				lineageTag: 533ff0fd-fd44-43c2-9b3b-579c0cf068b6
+				sourceLineageTag: _key__fact__catalog_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__catalog_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__catalog_sales
+				dataType: string
+				lineageTag: 931b7f08-2345-42d5-9547-a733c1f7741b
+				sourceLineageTag: _key__fact__catalog_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__catalog_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__inventory
+				dataType: string
+				lineageTag: e236d311-053e-4e61-832b-1b7050af4767
+				sourceLineageTag: _key__fact__inventory
+				summarizeBy: none
+				sourceColumn: _key__fact__inventory
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__store_returns
+				dataType: string
+				lineageTag: 14534cda-7348-42ba-858e-9adfcb8d442e
+				sourceLineageTag: _key__fact__store_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__store_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__store_sales
+				dataType: string
+				lineageTag: e0176b4a-d51b-4951-90ca-8c9079f1957c
+				sourceLineageTag: _key__fact__store_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__store_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__web_returns
+				dataType: string
+				lineageTag: a586fc08-01ab-40fe-9dd6-4c60a237ab0c
+				sourceLineageTag: _key__fact__web_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__web_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__web_sales
+				dataType: string
+				lineageTag: ff8e71de-28ec-46c2-a896-f9f1199ccebd
+				sourceLineageTag: _key__fact__web_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__web_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__order_number
+				dataType: string
+				lineageTag: 151c146c-363e-4963-a526-d63c354a8a32
+				sourceLineageTag: _degenerate__order_number
+				summarizeBy: none
+				sourceColumn: _degenerate__order_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__ticket_number
+				dataType: string
+				lineageTag: 642b255f-b1fb-4dc4-a4e7-4279302f2c50
+				sourceLineageTag: _degenerate__ticket_number
+				summarizeBy: none
+				sourceColumn: _degenerate__ticket_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_returns__refunded_cash
+				dataType: double
+				lineageTag: 487421ad-428f-4977-9719-5225d7d779d8
+				sourceLineageTag: _measure__catalog_returns__refunded_cash
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__return_amount
+				dataType: double
+				lineageTag: f80407b2-c729-45cd-8e32-290ba9a00433
+				sourceLineageTag: _measure__catalog_returns__return_amount
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__return_amount
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__return_amt_inc_tax
+				dataType: double
+				lineageTag: f0dc0ca4-20da-4a46-b263-c57269764555
+				sourceLineageTag: _measure__catalog_returns__return_amt_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__return_ship_cost
+				dataType: double
+				lineageTag: 5bde861d-eaff-4d96-bef2-28df2ca54524
+				sourceLineageTag: _measure__catalog_returns__return_ship_cost
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__return_tax
+				dataType: double
+				lineageTag: 7ec76402-4195-4f0c-89d6-98e5d691a0c1
+				sourceLineageTag: _measure__catalog_returns__return_tax
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__reversed_charge
+				dataType: double
+				lineageTag: 1b39b93f-32ed-486b-b987-ef1d7986984e
+				sourceLineageTag: _measure__catalog_returns__reversed_charge
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_returns__store_credit
+				dataType: double
+				lineageTag: a43eb3b0-597a-47ca-94bb-705071e898f0
+				sourceLineageTag: _measure__catalog_returns__store_credit
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_returns__store_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_discount_amt
+				dataType: double
+				lineageTag: af013126-1dbc-42af-afe4-e1d103490ad4
+				sourceLineageTag: _measure__catalog_sales__ext_discount_amt
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_list_price
+				dataType: double
+				lineageTag: 2d106c57-bb7d-480b-ad56-3d989f6b11b1
+				sourceLineageTag: _measure__catalog_sales__ext_list_price
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_ship_cost
+				dataType: double
+				lineageTag: 85b87873-f4cf-4b29-9092-cf8375a386f2
+				sourceLineageTag: _measure__catalog_sales__ext_ship_cost
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__ext_wholesale_cost
+				dataType: double
+				lineageTag: 5705712b-3f8c-4a0d-b205-f1752c9ef2e1
+				sourceLineageTag: _measure__catalog_sales__ext_wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__list_price
+				dataType: double
+				lineageTag: 35e965dd-4ec8-43b8-a4af-a1ab72169b3a
+				sourceLineageTag: _measure__catalog_sales__list_price
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__net_paid_inc_ship
+				dataType: double
+				lineageTag: 9ec604d1-4c91-43f5-b055-bbd174025615
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_ship
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__net_paid_inc_ship
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__net_paid_inc_ship_tax
+				dataType: double
+				lineageTag: 39fd8b9c-b841-402b-b2c0-a5934c3903be
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_ship_tax
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__net_paid_inc_ship_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__sales_price
+				dataType: double
+				lineageTag: f8c866eb-86f9-477e-9002-ee7eecf97a08
+				sourceLineageTag: _measure__catalog_sales__sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__catalog_sales__wholesale_cost
+				dataType: double
+				lineageTag: 39b9a3de-638d-413d-8468-9471821666c5
+				sourceLineageTag: _measure__catalog_sales__wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__catalog_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__refunded_cash
+				dataType: double
+				lineageTag: 39f7c0ef-023f-4ef6-94e0-fe2cd395ffaa
+				sourceLineageTag: _measure__store_returns__refunded_cash
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__return_amt_inc_tax
+				dataType: double
+				lineageTag: e5cb105d-9352-47bf-8675-15e8f5040413
+				sourceLineageTag: _measure__store_returns__return_amt_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__return_ship_cost
+				dataType: double
+				lineageTag: 65ab3fa9-b89e-449f-914f-a11ce2d272a8
+				sourceLineageTag: _measure__store_returns__return_ship_cost
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__return_tax
+				dataType: double
+				lineageTag: 31cbffce-dca0-4fe6-bfc6-323e3adf2b72
+				sourceLineageTag: _measure__store_returns__return_tax
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__reversed_charge
+				dataType: double
+				lineageTag: 5b2988d5-e08c-4524-b24c-5c9fee717885
+				sourceLineageTag: _measure__store_returns__reversed_charge
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_returns__store_credit
+				dataType: double
+				lineageTag: 90c83d3c-3e41-4084-9dbc-c192274af619
+				sourceLineageTag: _measure__store_returns__store_credit
+				summarizeBy: sum
+				sourceColumn: _measure__store_returns__store_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__ext_discount_amt
+				dataType: double
+				lineageTag: a14d98e4-7ee7-42af-80ec-61990975ae3c
+				sourceLineageTag: _measure__store_sales__ext_discount_amt
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__ext_list_price
+				dataType: double
+				lineageTag: 04b8e236-685e-4136-b9a7-83833b107508
+				sourceLineageTag: _measure__store_sales__ext_list_price
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__ext_wholesale_cost
+				dataType: double
+				lineageTag: eb04ad89-7012-4b47-aff3-00200b7efcd6
+				sourceLineageTag: _measure__store_sales__ext_wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__list_price
+				dataType: double
+				lineageTag: 43c22bff-2932-41ca-95ec-0a9180b44b94
+				sourceLineageTag: _measure__store_sales__list_price
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__sales_price
+				dataType: double
+				lineageTag: 098a597b-0b2c-44e4-b31d-cc8d2c959c05
+				sourceLineageTag: _measure__store_sales__sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__store_sales__wholesale_cost
+				dataType: double
+				lineageTag: 2c08b464-7192-4b7b-9311-5e6e0fc2974b
+				sourceLineageTag: _measure__store_sales__wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__store_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__account_credit
+				dataType: double
+				lineageTag: ec68f34b-e04f-4f8a-bf99-3c5eb70a6bd3
+				sourceLineageTag: _measure__web_returns__account_credit
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__account_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__refunded_cash
+				dataType: double
+				lineageTag: 37c51e22-c79f-447f-8af5-8d2059d3bcc5
+				sourceLineageTag: _measure__web_returns__refunded_cash
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__return_amt_inc_tax
+				dataType: double
+				lineageTag: 2393519c-0e0c-45cc-b6c7-ee47e2ccdd72
+				sourceLineageTag: _measure__web_returns__return_amt_inc_tax
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__return_ship_cost
+				dataType: double
+				lineageTag: cb6ba9e2-7004-43ca-91b4-9aec69888c8e
+				sourceLineageTag: _measure__web_returns__return_ship_cost
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__return_tax
+				dataType: double
+				lineageTag: 5f1a6ba2-9465-4a0c-93c9-71ded2873141
+				sourceLineageTag: _measure__web_returns__return_tax
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_returns__reversed_charge
+				dataType: double
+				lineageTag: 9b95872d-3962-4a14-8ef1-c69c1d8fd1a6
+				sourceLineageTag: _measure__web_returns__reversed_charge
+				summarizeBy: sum
+				sourceColumn: _measure__web_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_discount_amt
+				dataType: double
+				lineageTag: 51a6d1f5-9aa9-491d-8b3e-abdf12e546c0
+				sourceLineageTag: _measure__web_sales__ext_discount_amt
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_list_price
+				dataType: double
+				lineageTag: 13aa9f15-d030-41f2-a093-450f2b400c21
+				sourceLineageTag: _measure__web_sales__ext_list_price
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_ship_cost
+				dataType: double
+				lineageTag: b6f6aba8-089c-46d1-b1f3-e470bf898425
+				sourceLineageTag: _measure__web_sales__ext_ship_cost
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__ext_wholesale_cost
+				dataType: double
+				lineageTag: cddccdc9-eb81-4fae-b0b4-4fa9c1335c75
+				sourceLineageTag: _measure__web_sales__ext_wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__list_price
+				dataType: double
+				lineageTag: 83360752-5e33-45a8-b7d6-91bffcd86068
+				sourceLineageTag: _measure__web_sales__list_price
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__net_paid_inc_ship
+				dataType: double
+				lineageTag: 77f64eca-1f0a-4e9b-81a6-6ab60721d699
+				sourceLineageTag: _measure__web_sales__net_paid_inc_ship
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__net_paid_inc_ship
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__net_paid_inc_ship_tax
+				dataType: double
+				lineageTag: 935180f9-c657-48dd-8fc0-b707ca7b4137
+				sourceLineageTag: _measure__web_sales__net_paid_inc_ship_tax
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__net_paid_inc_ship_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__sales_price
+				dataType: double
+				lineageTag: 8375432f-39ee-4364-9d3e-e1ac82541393
+				sourceLineageTag: _measure__web_sales__sales_price
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			column _measure__web_sales__wholesale_cost
+				dataType: double
+				lineageTag: 810f73e1-ae22-47d3-a09e-ace282093717
+				sourceLineageTag: _measure__web_sales__wholesale_cost
+				summarizeBy: sum
+				sourceColumn: _measure__web_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			partition _bridge = entity
+				mode: directLake
+				source
+					entityName: _bridge
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__reason
+			lineageTag: 4bd9332e-e03e-4774-852f-d12a22e4069e
+			sourceLineageTag: [tpc_ds__sf_100].[dim__reason]
+
+			column reason_id
+				dataType: string
+				lineageTag: f43e6568-b4cd-4b86-aec2-6c91d839e510
+				sourceLineageTag: reason_id
+				summarizeBy: none
+				sourceColumn: reason_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column reason_desc
+				dataType: string
+				lineageTag: 087c8766-2b49-4358-a7c8-c76de145e172
+				sourceLineageTag: reason_desc
+				summarizeBy: none
+				sourceColumn: reason_desc
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__reason
+				dataType: int64
+				formatString: 0
+				lineageTag: 567c6b0a-cdc4-48a4-af7c-1bc03f32466c
+				sourceLineageTag: _key__dim__reason
+				summarizeBy: none
+				sourceColumn: _key__dim__reason
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__reason = entity
+				mode: directLake
+				source
+					entityName: dim__reason
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__warehouse
+			lineageTag: 96dfd294-6ee5-49f6-beb6-8b757111ece3
+			sourceLineageTag: [tpc_ds__sf_100].[dim__warehouse]
+
+			column warehouse_id
+				dataType: string
+				lineageTag: 96aeecdd-ff1d-47ae-8d57-32ed3fe1297b
+				sourceLineageTag: warehouse_id
+				summarizeBy: none
+				sourceColumn: warehouse_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column warehouse_name
+				dataType: string
+				lineageTag: d35a7a09-f2ae-4c6b-8717-d522fb956b57
+				sourceLineageTag: warehouse_name
+				summarizeBy: none
+				sourceColumn: warehouse_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column state
+				dataType: string
+				lineageTag: 93ca5b34-2963-4237-add3-479a26c76f6e
+				sourceLineageTag: state
+				summarizeBy: none
+				sourceColumn: state
+
+				annotation SummarizationSetBy = Automatic
+
+			column country
+				dataType: string
+				lineageTag: 75cacbec-57e1-472c-a066-fc76cb2b0a48
+				sourceLineageTag: country
+				summarizeBy: none
+				sourceColumn: country
+
+				annotation SummarizationSetBy = Automatic
+
+			column city
+				dataType: string
+				lineageTag: 4ca4a56f-55dd-4322-9e6c-62b801cf7f31
+				sourceLineageTag: city
+				summarizeBy: none
+				sourceColumn: city
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: 580a5ab1-a09d-4150-b2f6-6619fb8d12b8
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__warehouse = entity
+				mode: directLake
+				source
+					entityName: dim__warehouse
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__date
+			lineageTag: 721e9000-f6a5-4d15-a2c5-bf361411f6da
+			sourceLineageTag: [tpc_ds__sf_100].[dim__date]
+
+			column date
+				dataType: dateTime
+				formatString: General Date
+				lineageTag: 2110e94a-df46-428b-9781-8934919062f0
+				sourceLineageTag: date
+				summarizeBy: none
+				sourceColumn: date
+
+				annotation SummarizationSetBy = Automatic
+
+			column year
+				dataType: int64
+				formatString: 0
+				lineageTag: cf0f2036-7d28-41cf-a0cc-8e78d96607b3
+				sourceLineageTag: year
+				summarizeBy: none
+				sourceColumn: year
+
+				annotation SummarizationSetBy = Automatic
+
+			column month_of_year
+				dataType: int64
+				formatString: 0
+				lineageTag: e4e0ca42-62a0-49c2-989f-f5dca901c679
+				sourceLineageTag: month_of_year
+				summarizeBy: none
+				sourceColumn: month_of_year
+
+				annotation SummarizationSetBy = Automatic
+
+			column day_of_month
+				dataType: int64
+				formatString: 0
+				lineageTag: 2a60809f-f6d5-4e06-8fac-0f1582202305
+				sourceLineageTag: day_of_month
+				summarizeBy: none
+				sourceColumn: day_of_month
+
+				annotation SummarizationSetBy = Automatic
+
+			column quarter_of_year
+				dataType: int64
+				formatString: 0
+				lineageTag: 24635802-7032-49dc-b8d2-de0321ed2036
+				sourceLineageTag: quarter_of_year
+				summarizeBy: none
+				sourceColumn: quarter_of_year
+
+				annotation SummarizationSetBy = Automatic
+
+			column day_name
+				dataType: string
+				lineageTag: d9621597-a1dc-42ef-8bfb-6802772e1fda
+				sourceLineageTag: day_name
+				summarizeBy: none
+				sourceColumn: day_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column week_seq
+				dataType: int64
+				formatString: 0
+				lineageTag: a5ff6db3-62cd-425a-90f7-a2a249da0e31
+				sourceLineageTag: week_seq
+				summarizeBy: none
+				sourceColumn: week_seq
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: 0082992a-4c87-4c8e-8d5a-395f4b669662
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__date = entity
+				mode: directLake
+				source
+					entityName: dim__date
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__store
+			lineageTag: 0a6536f5-6342-4e57-b59f-582cc2ab1b65
+			sourceLineageTag: [tpc_ds__sf_100].[dim__store]
+
+			column store_id
+				dataType: string
+				lineageTag: 55e58294-70a5-4b59-becb-37d655f6dc03
+				sourceLineageTag: store_id
+				summarizeBy: none
+				sourceColumn: store_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column store_name
+				dataType: string
+				lineageTag: 19883b85-97c3-4f0e-8e6e-7d87893773e6
+				sourceLineageTag: store_name
+				summarizeBy: none
+				sourceColumn: store_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column company_id
+				dataType: int64
+				formatString: 0
+				lineageTag: 7c90d74c-4a33-4fb6-9f68-ded1f1f33be7
+				sourceLineageTag: company_id
+				summarizeBy: none
+				sourceColumn: company_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column company_name
+				dataType: string
+				lineageTag: 24e80b63-9e1c-4f7f-b354-1d6b8b58025d
+				sourceLineageTag: company_name
+				summarizeBy: none
+				sourceColumn: company_name
+
+				annotation SummarizationSetBy = Automatic
+
+			column state
+				dataType: string
+				lineageTag: 0f13c607-c79d-43a8-a2f3-3b878e17736e
+				sourceLineageTag: state
+				summarizeBy: none
+				sourceColumn: state
+
+				annotation SummarizationSetBy = Automatic
+
+			column country
+				dataType: string
+				lineageTag: 048ef1f8-f4a9-4ef4-bef9-520672b408b7
+				sourceLineageTag: country
+				summarizeBy: none
+				sourceColumn: country
+
+				annotation SummarizationSetBy = Automatic
+
+			column city
+				dataType: string
+				lineageTag: 9b5d401d-751b-4a8b-a035-04022728bf60
+				sourceLineageTag: city
+				summarizeBy: none
+				sourceColumn: city
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__store
+				dataType: int64
+				formatString: 0
+				lineageTag: 2b8988e6-9a9a-44af-8069-5e5f6913f499
+				sourceLineageTag: _key__dim__store
+				summarizeBy: none
+				sourceColumn: _key__dim__store
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__store = entity
+				mode: directLake
+				source
+					entityName: dim__store
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__item
+			lineageTag: 76bb53c2-9978-46e5-8379-c8e7d291b422
+			sourceLineageTag: [tpc_ds__sf_100].[dim__item]
+
+			column item_id
+				dataType: string
+				lineageTag: 2817bd78-5bc0-4699-b028-9001eaf0db49
+				sourceLineageTag: item_id
+				summarizeBy: none
+				sourceColumn: item_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column item_desc
+				dataType: string
+				lineageTag: 5a2ead99-c5e9-4f01-b091-a44102f871c5
+				sourceLineageTag: item_desc
+				summarizeBy: none
+				sourceColumn: item_desc
+
+				annotation SummarizationSetBy = Automatic
+
+			column category
+				dataType: string
+				lineageTag: 3036215d-e2bd-4da5-bdae-ba6cb4ab3323
+				sourceLineageTag: category
+				summarizeBy: none
+				sourceColumn: category
+
+				annotation SummarizationSetBy = Automatic
+
+			column class
+				dataType: string
+				lineageTag: d9ff4018-1452-4884-a95b-483fc045ae88
+				sourceLineageTag: class
+				summarizeBy: none
+				sourceColumn: class
+
+				annotation SummarizationSetBy = Automatic
+
+			column brand
+				dataType: string
+				lineageTag: 6881cc59-8c66-4b06-8ea0-aca65f6f6ce8
+				sourceLineageTag: brand
+				summarizeBy: none
+				sourceColumn: brand
+
+				annotation SummarizationSetBy = Automatic
+
+			column manufact_id
+				dataType: int64
+				formatString: 0
+				lineageTag: 5b352b78-74a5-4488-a834-e17cc0d5fcbd
+				sourceLineageTag: manufact_id
+				summarizeBy: none
+				sourceColumn: manufact_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column current_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: e889f380-b422-464c-876d-0c96b23c71d9
+				sourceLineageTag: current_price
+				summarizeBy: none
+				sourceColumn: current_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column size
+				dataType: string
+				lineageTag: 8e995683-8fad-4a6e-bf80-21c64af95398
+				sourceLineageTag: size
+				summarizeBy: none
+				sourceColumn: size
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 5c24fb4c-0fab-47a3-aee0-a14ee8ccfcd5
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__item = entity
+				mode: directLake
+				source
+					entityName: dim__item
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__inventory
+			lineageTag: 2ebe01c2-0afc-4881-9346-0a2b857fd6e1
+			sourceLineageTag: [tpc_ds__sf_100].[fact__inventory]
+
+			column _measure__inventory__qty_on_hand
+				dataType: int64
+				formatString: 0
+				lineageTag: 7eae151b-2922-43b0-b6d1-2ae581033088
+				sourceLineageTag: _measure__inventory__qty_on_hand
+				summarizeBy: none
+				sourceColumn: _measure__inventory__qty_on_hand
+
+				annotation SummarizationSetBy = Automatic
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: 219bb756-a3a7-4e0b-8af7-630caab14f9a
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: 63233786-1a88-40c8-b246-6e6a79b6b52d
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__inventory
+				dataType: string
+				lineageTag: 60b6da89-6769-44c7-a9d7-ec0d5884e48b
+				sourceLineageTag: _key__fact__inventory
+				summarizeBy: none
+				sourceColumn: _key__fact__inventory
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 2b734d72-c967-4cc9-ac25-44bbb2da6a24
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: bca8bde9-ea76-46a7-96cb-2177f46894c6
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			partition fact__inventory = entity
+				mode: directLake
+				source
+					entityName: fact__inventory
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__web_sales
+			lineageTag: ecb37ccf-ee20-447c-800f-ddff3a1c0713
+			sourceLineageTag: [tpc_ds__sf_100].[fact__web_sales]
+
+			column _measure__web_sales__quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: f5ba1050-2f73-44eb-a772-1038072d1ec7
+				sourceLineageTag: _measure__web_sales__quantity
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__web_sales__ext_sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: b0dd4655-bb40-472d-b452-9b10f2625a70
+				sourceLineageTag: _measure__web_sales__ext_sales_price
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__net_paid
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 84e8dd26-b5ef-4d51-a204-95de2ce7b748
+				sourceLineageTag: _measure__web_sales__net_paid
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__net_paid_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 1d78a204-6eaf-4197-9d29-b47e1348b571
+				sourceLineageTag: _measure__web_sales__net_paid_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__ext_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 3b91bb15-98b9-4f2d-9634-12ba95eabd64
+				sourceLineageTag: _measure__web_sales__ext_tax
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__coupon_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4b092ba5-4c5a-481b-8fb6-f60a0954e7a6
+				sourceLineageTag: _measure__web_sales__coupon_amt
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__net_profit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 45906616-e6e8-46f2-9b2c-b0669ff23f97
+				sourceLineageTag: _measure__web_sales__net_profit
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: cf5d0ee5-7f17-41d2-84df-d081401b7b8b
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: ea074f98-c2ca-4303-9674-a8623440cc28
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__web_sales
+				dataType: string
+				lineageTag: d73ee17a-098c-489f-8a94-f6e5a32ca5ff
+				sourceLineageTag: _key__fact__web_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__web_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 4e281fca-06be-4165-9fc8-23ca4e1a4bca
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_date
+				dataType: int64
+				formatString: 0
+				lineageTag: 9aa1abcb-b431-49fa-99eb-9d8567316c66
+				sourceLineageTag: _key__dim__ship_date
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 9eada7ce-f6da-4c5f-83fe-fa3024d97dfd
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: cbd4015f-ffed-4376-98bf-47bc026cea6f
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_page
+				dataType: int64
+				formatString: 0
+				lineageTag: c19e8b06-59ee-4bd1-a34d-88f86a36d8c1
+				sourceLineageTag: _key__dim__web_page
+				summarizeBy: none
+				sourceColumn: _key__dim__web_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_site
+				dataType: int64
+				formatString: 0
+				lineageTag: 2ec4af9a-7fc8-4e3a-ab11-71fd11134f5d
+				sourceLineageTag: _key__dim__web_site
+				summarizeBy: none
+				sourceColumn: _key__dim__web_site
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_mode
+				dataType: int64
+				formatString: 0
+				lineageTag: a9e0db75-64ca-45bf-8802-83a2dc0a71df
+				sourceLineageTag: _key__dim__ship_mode
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_mode
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: 65ad2935-4d42-45d4-ab9e-c4b40ae99e8a
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__promotion
+				dataType: int64
+				formatString: 0
+				lineageTag: d2da0b44-e772-4dbe-aa32-ee80edcf2e5e
+				sourceLineageTag: _key__dim__promotion
+				summarizeBy: none
+				sourceColumn: _key__dim__promotion
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__order_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 2c682935-8ed3-43bf-89dc-35e077eb55e8
+				sourceLineageTag: _degenerate__order_number
+				summarizeBy: none
+				sourceColumn: _degenerate__order_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__web_sales__wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4da99958-5d20-4d47-a554-87ef5235a490
+				sourceLineageTag: _measure__web_sales__wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 9b373524-ad21-4fc7-93c4-c38ad11ddbd4
+				sourceLineageTag: _measure__web_sales__list_price
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: caf397d3-0b67-48cb-8845-96532c246afc
+				sourceLineageTag: _measure__web_sales__sales_price
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__ext_discount_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d9622320-7d03-487c-a3fd-9acad1855512
+				sourceLineageTag: _measure__web_sales__ext_discount_amt
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__ext_wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 6d04a70a-c5eb-482e-a5d6-f3940c9178fc
+				sourceLineageTag: _measure__web_sales__ext_wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__ext_list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: e7080452-b68e-44a7-842f-5c91ec12c988
+				sourceLineageTag: _measure__web_sales__ext_list_price
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__ext_ship_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 52f4bf73-b66d-4bab-a46f-25f5743a4443
+				sourceLineageTag: _measure__web_sales__ext_ship_cost
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__ext_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__net_paid_inc_ship
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 850b6907-78b5-46a4-a261-9a8a9a126487
+				sourceLineageTag: _measure__web_sales__net_paid_inc_ship
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__net_paid_inc_ship
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_sales__net_paid_inc_ship_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 3f2490f5-76f4-4e10-be05-297bcdb43e9b
+				sourceLineageTag: _measure__web_sales__net_paid_inc_ship_tax
+				summarizeBy: none
+				sourceColumn: _measure__web_sales__net_paid_inc_ship_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__web_sales = entity
+				mode: directLake
+				source
+					entityName: fact__web_sales
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__catalog_sales
+			lineageTag: 6b96de7e-d8f1-4026-bf30-303679438363
+			sourceLineageTag: [tpc_ds__sf_100].[fact__catalog_sales]
+
+			column _measure__catalog_sales__quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: da3b22d7-2e73-41ab-a12f-2048893d9892
+				sourceLineageTag: _measure__catalog_sales__quantity
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_sales__ext_sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: a3a27402-b7b2-4e5b-a948-ca8a3ce7cab6
+				sourceLineageTag: _measure__catalog_sales__ext_sales_price
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__net_paid
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 33b6fc6f-cc58-4c2c-8d4c-bd3d8fe36e4a
+				sourceLineageTag: _measure__catalog_sales__net_paid
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__net_paid_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d6078157-1ea6-4a2c-b63b-29f5817d5dfb
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__ext_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 16983f34-dff6-4afa-b328-ca35b7c8ebb5
+				sourceLineageTag: _measure__catalog_sales__ext_tax
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__coupon_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4e75f9f6-d8dc-4e13-8e06-38dfc431c1b4
+				sourceLineageTag: _measure__catalog_sales__coupon_amt
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__net_profit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: ce6a69b8-76bd-4116-b48a-e1c9ff198a38
+				sourceLineageTag: _measure__catalog_sales__net_profit
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: 5813a20c-9059-492b-bf0e-56740c8ebd13
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: 933af7ae-9bb8-42e5-8270-c4d32b0c314b
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__catalog_sales
+				dataType: string
+				lineageTag: 49b0cd6e-0a8f-4f31-bd9b-dfa48183d4b7
+				sourceLineageTag: _key__fact__catalog_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__catalog_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 3688ec74-5f15-4fed-90c2-d09327e830d4
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_date
+				dataType: int64
+				formatString: 0
+				lineageTag: 93b2a4e9-025c-4b90-a4c2-1d6a02fe4c6a
+				sourceLineageTag: _key__dim__ship_date
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: d93214c4-4001-42e9-9fdc-ffca57b5e89f
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: f36f21e7-b369-43e3-b3c3-dbb936816cb7
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__call_center
+				dataType: int64
+				formatString: 0
+				lineageTag: 411bc980-4c02-489f-9944-68d99354142f
+				sourceLineageTag: _key__dim__call_center
+				summarizeBy: none
+				sourceColumn: _key__dim__call_center
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__catalog_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 2894a62a-d590-444c-a2f1-4c733379cb00
+				sourceLineageTag: _key__dim__catalog_page
+				summarizeBy: none
+				sourceColumn: _key__dim__catalog_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_mode
+				dataType: int64
+				formatString: 0
+				lineageTag: 31c4e263-e95b-401f-9e9e-02d78882f2e7
+				sourceLineageTag: _key__dim__ship_mode
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_mode
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: ca95518e-25f3-4d47-a8f4-4e6e5ed574e5
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__promotion
+				dataType: int64
+				formatString: 0
+				lineageTag: 1166d9f1-3fc6-45df-94c2-c7fd35bcfccd
+				sourceLineageTag: _key__dim__promotion
+				summarizeBy: none
+				sourceColumn: _key__dim__promotion
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__order_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 2c4e1bdd-d5cd-4bf9-9b69-bc29e7a72a63
+				sourceLineageTag: _degenerate__order_number
+				summarizeBy: none
+				sourceColumn: _degenerate__order_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_sales__wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4a579237-09dc-4157-ad54-be3c2fa6f63a
+				sourceLineageTag: _measure__catalog_sales__wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 94c03eed-4ef8-48b6-bc8e-9bc77f6130d7
+				sourceLineageTag: _measure__catalog_sales__list_price
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d264f812-7b9e-4c1c-84be-3f97d7e27d90
+				sourceLineageTag: _measure__catalog_sales__sales_price
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__ext_discount_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 77f5ea0e-7c71-429c-a2b5-77f7b6f1ac3f
+				sourceLineageTag: _measure__catalog_sales__ext_discount_amt
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__ext_wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 099d6a5a-57c6-4acd-8dbc-e45a27ad3cbe
+				sourceLineageTag: _measure__catalog_sales__ext_wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__ext_list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 393b077b-e6d5-4e15-854a-64f6a433b32c
+				sourceLineageTag: _measure__catalog_sales__ext_list_price
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__ext_ship_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 65d1f230-6e9f-4b0a-8458-7240650af6d8
+				sourceLineageTag: _measure__catalog_sales__ext_ship_cost
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__ext_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__net_paid_inc_ship
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 98a73b49-e9e0-480c-8a78-82c70693d6cd
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_ship
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__net_paid_inc_ship
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_sales__net_paid_inc_ship_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 2ea8c152-19b2-443b-8c88-6476cfdc45f0
+				sourceLineageTag: _measure__catalog_sales__net_paid_inc_ship_tax
+				summarizeBy: none
+				sourceColumn: _measure__catalog_sales__net_paid_inc_ship_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__catalog_sales = entity
+				mode: directLake
+				source
+					entityName: fact__catalog_sales
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__store_sales
+			lineageTag: dcd3dc01-84bb-438a-8972-6596c2cb1f42
+			sourceLineageTag: [tpc_ds__sf_100].[fact__store_sales]
+
+			column _measure__store_sales__quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: aed7d2d5-ba9b-460a-b100-e2dbe21a1efd
+				sourceLineageTag: _measure__store_sales__quantity
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__store_sales__ext_sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4fd9e823-42b4-4bde-948e-24b4560db639
+				sourceLineageTag: _measure__store_sales__ext_sales_price
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__ext_sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__net_paid
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: c883e4fb-3a20-41e7-a7c8-11e3219e5dc0
+				sourceLineageTag: _measure__store_sales__net_paid
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__net_paid
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__net_paid_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 472a7a04-c7d2-4099-b823-cc671d4e602d
+				sourceLineageTag: _measure__store_sales__net_paid_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__net_paid_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__ext_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 2b3642fa-574b-42f1-ada0-88354a11e118
+				sourceLineageTag: _measure__store_sales__ext_tax
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__ext_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__coupon_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: cb36e6d0-8649-43ce-8366-48cf725d743e
+				sourceLineageTag: _measure__store_sales__coupon_amt
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__coupon_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__net_profit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: ec0bafe1-aba7-4997-b122-e58c4b3311e4
+				sourceLineageTag: _measure__store_sales__net_profit
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__net_profit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: 01eb262d-cce1-485f-8302-90d01e4f0cd1
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: c76a0b96-fced-4a75-a57b-f97f70409b9b
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__store_sales
+				dataType: string
+				lineageTag: 6c258e45-5f64-40d8-a7e0-404168c4ba03
+				sourceLineageTag: _key__fact__store_sales
+				summarizeBy: none
+				sourceColumn: _key__fact__store_sales
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 2d444882-a4c5-4679-abb8-2f42af47271c
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 6d60df3f-0e3a-4dc6-ab89-9daa25a4b195
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: d8ee8642-de39-4273-9f90-3e2e357aa610
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__store
+				dataType: int64
+				formatString: 0
+				lineageTag: e1f4d083-2d33-486b-8572-636dc4cf58e5
+				sourceLineageTag: _key__dim__store
+				summarizeBy: none
+				sourceColumn: _key__dim__store
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__promotion
+				dataType: int64
+				formatString: 0
+				lineageTag: 51b8002e-6640-4c11-9b36-e44c3750665f
+				sourceLineageTag: _key__dim__promotion
+				summarizeBy: none
+				sourceColumn: _key__dim__promotion
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__ticket_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 2bfae268-6030-4b15-b200-01ef217d5014
+				sourceLineageTag: _degenerate__ticket_number
+				summarizeBy: none
+				sourceColumn: _degenerate__ticket_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__store_sales__wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d6058ba9-aaca-406a-9eab-63b3babbf357
+				sourceLineageTag: _measure__store_sales__wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 0fbc1cc2-982a-40d0-b99a-d02f9225cb69
+				sourceLineageTag: _measure__store_sales__list_price
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__sales_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4190ea6c-e049-4d16-adc0-2ef042bd6cb5
+				sourceLineageTag: _measure__store_sales__sales_price
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__sales_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__ext_discount_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 0adb9433-4024-46dd-bbe9-984a89acfc5f
+				sourceLineageTag: _measure__store_sales__ext_discount_amt
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__ext_discount_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__ext_wholesale_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: cddf1a3d-7df5-444c-bdd6-8829be542ade
+				sourceLineageTag: _measure__store_sales__ext_wholesale_cost
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__ext_wholesale_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_sales__ext_list_price
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: fa0ab889-ed20-476e-bc52-10b19e6cb865
+				sourceLineageTag: _measure__store_sales__ext_list_price
+				summarizeBy: none
+				sourceColumn: _measure__store_sales__ext_list_price
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__store_sales = entity
+				mode: directLake
+				source
+					entityName: fact__store_sales
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__call_center
+			lineageTag: ad130e74-e2c4-4c37-887a-1557b58cc6e4
+			sourceLineageTag: [tpc_ds__sf_100].[dim__call_center]
+
+			column call_center_id
+				dataType: string
+				lineageTag: 1788c7fa-1fce-4c34-a1a5-6f55702767f6
+				sourceLineageTag: call_center_id
+				summarizeBy: none
+				sourceColumn: call_center_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column name
+				dataType: string
+				lineageTag: 2d603348-44cb-43f3-8251-8a01a4f3c157
+				sourceLineageTag: name
+				summarizeBy: none
+				sourceColumn: name
+
+				annotation SummarizationSetBy = Automatic
+
+			column country
+				dataType: string
+				lineageTag: 617d41bf-7141-48f6-a70b-601984ff6eed
+				sourceLineageTag: country
+				summarizeBy: none
+				sourceColumn: country
+
+				annotation SummarizationSetBy = Automatic
+
+			column state
+				dataType: string
+				lineageTag: bfa33600-5f82-4223-ab05-44d2152e1632
+				sourceLineageTag: state
+				summarizeBy: none
+				sourceColumn: state
+
+				annotation SummarizationSetBy = Automatic
+
+			column city
+				dataType: string
+				lineageTag: e1bbb29c-5852-4358-9744-a30c735266ed
+				sourceLineageTag: city
+				summarizeBy: none
+				sourceColumn: city
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__call_center
+				dataType: int64
+				formatString: 0
+				lineageTag: 653aab61-4d76-4b76-a423-4669e19c2398
+				sourceLineageTag: _key__dim__call_center
+				summarizeBy: none
+				sourceColumn: _key__dim__call_center
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__call_center = entity
+				mode: directLake
+				source
+					entityName: dim__call_center
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__web_returns
+			lineageTag: e9459113-b8f2-40e3-976a-1d506e6c48f9
+			sourceLineageTag: [tpc_ds__sf_100].[fact__web_returns]
+
+			column _measure__web_returns__return_quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: b064e445-2474-4e76-b426-11184dc7e69f
+				sourceLineageTag: _measure__web_returns__return_quantity
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__web_returns__return_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 35824201-06a6-4aba-8021-962fd60afff0
+				sourceLineageTag: _measure__web_returns__return_amt
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__return_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__net_loss
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 5d1ad186-43c4-47ce-9303-b58dfecb9887
+				sourceLineageTag: _measure__web_returns__net_loss
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__fee
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 907d2d96-fac4-4178-b794-33131559dd94
+				sourceLineageTag: _measure__web_returns__fee
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: eef05e20-e909-4185-8d39-825ff5ba7518
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: 3870cd06-f804-4fcc-941b-e9d6587e6629
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__web_returns
+				dataType: string
+				lineageTag: 5ef8bdae-65d7-43dd-8e53-ef653aed2f26
+				sourceLineageTag: _key__fact__web_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__web_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 6473f70b-6cc5-4ba5-9e1d-c60a01d1bb82
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: 8f82f33e-2812-46b3-a0ed-c820db64a0e6
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: c4339920-eb90-4796-bdc2-f48deb0bc37b
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__web_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 11efa082-1824-44b7-a45e-710e89b7e348
+				sourceLineageTag: _key__dim__web_page
+				summarizeBy: none
+				sourceColumn: _key__dim__web_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__reason
+				dataType: int64
+				formatString: 0
+				lineageTag: 0aa44d14-31ef-4e68-a22d-81986cc74781
+				sourceLineageTag: _key__dim__reason
+				summarizeBy: none
+				sourceColumn: _key__dim__reason
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__order_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 98705d62-451a-4297-8deb-798cd1663a43
+				sourceLineageTag: _degenerate__order_number
+				summarizeBy: none
+				sourceColumn: _degenerate__order_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__web_returns__return_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: cd6cb7c5-dde3-4de5-a2ea-bfa6ac3171d6
+				sourceLineageTag: _measure__web_returns__return_tax
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__return_amt_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d1fc36b5-ba02-491d-bf8b-10e99ab9c30b
+				sourceLineageTag: _measure__web_returns__return_amt_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__return_ship_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 1dbd4c6e-42da-4ae8-8255-5f6699be4d88
+				sourceLineageTag: _measure__web_returns__return_ship_cost
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__refunded_cash
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: b7248063-2e17-4055-a743-22404e867d84
+				sourceLineageTag: _measure__web_returns__refunded_cash
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__reversed_charge
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: e0518e93-fbd7-4ae6-b350-5d8fe38c90e2
+				sourceLineageTag: _measure__web_returns__reversed_charge
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__web_returns__account_credit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4bc18150-2795-4c22-b249-fa5c722e5da6
+				sourceLineageTag: _measure__web_returns__account_credit
+				summarizeBy: none
+				sourceColumn: _measure__web_returns__account_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__web_returns = entity
+				mode: directLake
+				source
+					entityName: fact__web_returns
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__catalog_returns
+			lineageTag: d77567d8-7fde-4019-abb7-1d5c1024b817
+			sourceLineageTag: [tpc_ds__sf_100].[fact__catalog_returns]
+
+			column _measure__catalog_returns__return_quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: e2c198a2-ae57-4731-977d-e5c5e6b01723
+				sourceLineageTag: _measure__catalog_returns__return_quantity
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_returns__net_loss
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 51473622-b782-4703-afbc-3c6a6d338376
+				sourceLineageTag: _measure__catalog_returns__net_loss
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__fee
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 1d5ab486-6a77-4306-9f80-01b4061a1c83
+				sourceLineageTag: _measure__catalog_returns__fee
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: a764f97d-3b8f-4971-8cd3-d12e908d64fe
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: a4ed2ce5-7058-4d21-a3d2-94f108fe30b7
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__catalog_returns
+				dataType: string
+				lineageTag: a70f6177-bf2b-4825-87a5-1b048b9f2844
+				sourceLineageTag: _key__fact__catalog_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__catalog_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 0e4c1771-00b5-4462-a4fd-2eb439e6de4e
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: e6246c4d-e3de-4960-b40b-37f4bf2a13a2
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: 21b6ff90-a026-46b9-8c4e-4e2847b335fe
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__call_center
+				dataType: int64
+				formatString: 0
+				lineageTag: 5409037b-b26f-41f3-a5e8-df09218587ae
+				sourceLineageTag: _key__dim__call_center
+				summarizeBy: none
+				sourceColumn: _key__dim__call_center
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__catalog_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 66066938-97ee-4b6d-a765-6281387cfa0b
+				sourceLineageTag: _key__dim__catalog_page
+				summarizeBy: none
+				sourceColumn: _key__dim__catalog_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__ship_mode
+				dataType: int64
+				formatString: 0
+				lineageTag: c0325aba-b7df-453a-a4f3-9354442a235c
+				sourceLineageTag: _key__dim__ship_mode
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_mode
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__warehouse
+				dataType: int64
+				formatString: 0
+				lineageTag: 75577a90-6553-45d9-8ad7-2158b0d92958
+				sourceLineageTag: _key__dim__warehouse
+				summarizeBy: none
+				sourceColumn: _key__dim__warehouse
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__reason
+				dataType: int64
+				formatString: 0
+				lineageTag: 2e63d0ba-5ef8-4695-8e8d-d43a801cedf0
+				sourceLineageTag: _key__dim__reason
+				summarizeBy: none
+				sourceColumn: _key__dim__reason
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__order_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 9552a850-9099-454e-990d-7597f4235b7f
+				sourceLineageTag: _degenerate__order_number
+				summarizeBy: none
+				sourceColumn: _degenerate__order_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__catalog_returns__return_amount
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 819f40ed-6c17-41bc-96c7-74e4927178c6
+				sourceLineageTag: _measure__catalog_returns__return_amount
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__return_amount
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__return_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 8ced7234-1f7d-450b-aa68-9b2d37783457
+				sourceLineageTag: _measure__catalog_returns__return_tax
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__return_amt_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: ec75e95a-7744-478a-a8dd-78012ae8cdca
+				sourceLineageTag: _measure__catalog_returns__return_amt_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__return_ship_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: cc768ce6-6e9f-4259-a045-059d6eb3b4db
+				sourceLineageTag: _measure__catalog_returns__return_ship_cost
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__refunded_cash
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 6f0576d4-c885-4741-99ce-d54996d5bc1a
+				sourceLineageTag: _measure__catalog_returns__refunded_cash
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__reversed_charge
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d8d62702-54c7-454a-b45e-d63a886bdb9c
+				sourceLineageTag: _measure__catalog_returns__reversed_charge
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__catalog_returns__store_credit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: ee33266e-9591-40c2-91e2-2574318f01da
+				sourceLineageTag: _measure__catalog_returns__store_credit
+				summarizeBy: none
+				sourceColumn: _measure__catalog_returns__store_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__catalog_returns = entity
+				mode: directLake
+				source
+					entityName: fact__catalog_returns
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__catalog_page
+			lineageTag: 4837955b-99e1-49dc-9dfd-130cf1b80bf5
+			sourceLineageTag: [tpc_ds__sf_100].[dim__catalog_page]
+
+			column catalog_page_id
+				dataType: string
+				lineageTag: 79f204d1-0483-4d37-8410-1c9dba4ffc0f
+				sourceLineageTag: catalog_page_id
+				summarizeBy: none
+				sourceColumn: catalog_page_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column department
+				dataType: string
+				lineageTag: 96e37388-2548-4ed8-8d8d-5df068cfc732
+				sourceLineageTag: department
+				summarizeBy: none
+				sourceColumn: department
+
+				annotation SummarizationSetBy = Automatic
+
+			column catalog_number
+				dataType: int64
+				formatString: 0
+				lineageTag: 73e54973-0823-4a66-a4bc-87a6f0ce678d
+				sourceLineageTag: catalog_number
+				summarizeBy: none
+				sourceColumn: catalog_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__catalog_page
+				dataType: int64
+				formatString: 0
+				lineageTag: 82439773-1147-4444-8bc4-ad11c394295f
+				sourceLineageTag: _key__dim__catalog_page
+				summarizeBy: none
+				sourceColumn: _key__dim__catalog_page
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__catalog_page = entity
+				mode: directLake
+				source
+					entityName: dim__catalog_page
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table fact__store_returns
+			lineageTag: 78c4f680-28b0-4a4e-a087-bbc6e307f62c
+			sourceLineageTag: [tpc_ds__sf_100].[fact__store_returns]
+
+			column _measure__store_returns__return_quantity
+				dataType: int64
+				formatString: 0
+				lineageTag: 96aea219-1da0-4742-b312-b46ff56e1fc6
+				sourceLineageTag: _measure__store_returns__return_quantity
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__return_quantity
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__store_returns__return_amt
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 13ebb285-9f88-473c-8775-c08630f7a683
+				sourceLineageTag: _measure__store_returns__return_amt
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__return_amt
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__net_loss
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 15e8652d-6700-4516-b67b-cb58115730b8
+				sourceLineageTag: _measure__store_returns__net_loss
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__net_loss
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__fee
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 4e9e9398-c4d1-4c2b-b17f-da5bb8459855
+				sourceLineageTag: _measure__store_returns__fee
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__fee
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _part__year
+				dataType: int64
+				formatString: 0
+				lineageTag: d0dc00c6-272c-49c6-8b7b-9b66feb54a70
+				sourceLineageTag: _part__year
+				summarizeBy: none
+				sourceColumn: _part__year
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date
+				dataType: int64
+				formatString: 0
+				lineageTag: 48acec8f-28cc-40ed-ac2a-0d93fc282b09
+				sourceLineageTag: _key__dim__date
+				summarizeBy: none
+				sourceColumn: _key__dim__date
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__fact__store_returns
+				dataType: string
+				lineageTag: c5326cac-26de-4791-8363-d32196327fa2
+				sourceLineageTag: _key__fact__store_returns
+				summarizeBy: none
+				sourceColumn: _key__fact__store_returns
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 75c4f0bb-7796-4ad6-9ad2-bc435ee3ce2d
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__item
+				dataType: int64
+				formatString: 0
+				lineageTag: f3eaada9-bd99-4476-9675-96903da29274
+				sourceLineageTag: _key__dim__item
+				summarizeBy: none
+				sourceColumn: _key__dim__item
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__customer
+				dataType: int64
+				formatString: 0
+				lineageTag: ac9123b9-0800-4fb1-b940-7b6b836b1ec1
+				sourceLineageTag: _key__dim__customer
+				summarizeBy: none
+				sourceColumn: _key__dim__customer
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__store
+				dataType: int64
+				formatString: 0
+				lineageTag: df000ed3-dec9-462c-b92e-2cdd13c94b32
+				sourceLineageTag: _key__dim__store
+				summarizeBy: none
+				sourceColumn: _key__dim__store
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__reason
+				dataType: int64
+				formatString: 0
+				lineageTag: 2bcd01e6-1f61-4d50-b732-c2b41470c293
+				sourceLineageTag: _key__dim__reason
+				summarizeBy: none
+				sourceColumn: _key__dim__reason
+
+				annotation SummarizationSetBy = Automatic
+
+			column _degenerate__ticket_number
+				dataType: int64
+				formatString: 0
+				lineageTag: ccd5b670-5637-4cf3-a144-0f04e5176db4
+				sourceLineageTag: _degenerate__ticket_number
+				summarizeBy: none
+				sourceColumn: _degenerate__ticket_number
+
+				annotation SummarizationSetBy = Automatic
+
+			column _measure__store_returns__return_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 55dfbb77-6f29-4ddd-9328-5f6ca8a5cb9f
+				sourceLineageTag: _measure__store_returns__return_tax
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__return_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__return_amt_inc_tax
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 9b5daf93-b94f-4ddb-952f-7339713be05a
+				sourceLineageTag: _measure__store_returns__return_amt_inc_tax
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__return_amt_inc_tax
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__return_ship_cost
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 08fff5bc-d89f-45bd-85cb-c171b107c6a2
+				sourceLineageTag: _measure__store_returns__return_ship_cost
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__return_ship_cost
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__refunded_cash
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: d169f9d5-f4f9-495e-a427-c56f4c8fb259
+				sourceLineageTag: _measure__store_returns__refunded_cash
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__refunded_cash
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__reversed_charge
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: aabc3de3-b8c1-4d7d-a43c-ee0f6329beb9
+				sourceLineageTag: _measure__store_returns__reversed_charge
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__reversed_charge
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			column _measure__store_returns__store_credit
+				dataType: decimal
+				formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+				lineageTag: 619955ec-d527-4513-ad6e-68f58c6a28cc
+				sourceLineageTag: _measure__store_returns__store_credit
+				summarizeBy: none
+				sourceColumn: _measure__store_returns__store_credit
+
+				annotation SummarizationSetBy = Automatic
+
+				annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+			partition fact__store_returns = entity
+				mode: directLake
+				source
+					entityName: fact__store_returns
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__time
+			lineageTag: c895a814-1d0c-48d8-8756-ff0600445b03
+			sourceLineageTag: [tpc_ds__sf_100].[dim__time]
+
+			column _key__dim__time
+				dataType: int64
+				formatString: 0
+				lineageTag: 99917abd-c83f-4348-8a90-00df57829f3c
+				sourceLineageTag: _key__dim__time
+				summarizeBy: none
+				sourceColumn: _key__dim__time
+
+				annotation SummarizationSetBy = Automatic
+
+			column time_id
+				dataType: string
+				lineageTag: e83413d4-f374-46d2-94ce-30a458ed8d72
+				sourceLineageTag: time_id
+				summarizeBy: none
+				sourceColumn: time_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column time
+				dataType: int64
+				formatString: 0
+				lineageTag: ebd05bdd-4d4f-4f07-9b1c-eef62a39d497
+				sourceLineageTag: time
+				summarizeBy: none
+				sourceColumn: time
+
+				annotation SummarizationSetBy = Automatic
+
+			column hour
+				dataType: int64
+				formatString: 0
+				lineageTag: 59d05fb7-c3b7-4e42-ba04-6063f76e4212
+				sourceLineageTag: hour
+				summarizeBy: none
+				sourceColumn: hour
+
+				annotation SummarizationSetBy = Automatic
+
+			column minute
+				dataType: int64
+				formatString: 0
+				lineageTag: 74a539a6-9f97-4c4e-8aa4-1863599c9734
+				sourceLineageTag: minute
+				summarizeBy: none
+				sourceColumn: minute
+
+				annotation SummarizationSetBy = Automatic
+
+			column second
+				dataType: int64
+				formatString: 0
+				lineageTag: 0f9e2a8f-1740-4835-ab95-2d92e4ac17bc
+				sourceLineageTag: second
+				summarizeBy: none
+				sourceColumn: second
+
+				annotation SummarizationSetBy = Automatic
+
+			column am_pm
+				dataType: string
+				lineageTag: d01763ff-ed7f-4d2a-ae55-8ce45b124ae2
+				sourceLineageTag: am_pm
+				summarizeBy: none
+				sourceColumn: am_pm
+
+				annotation SummarizationSetBy = Automatic
+
+			column shift
+				dataType: string
+				lineageTag: 6d61eef2-bfe1-46ff-a945-c60b88c1351e
+				sourceLineageTag: shift
+				summarizeBy: none
+				sourceColumn: shift
+
+				annotation SummarizationSetBy = Automatic
+
+			column sub_shift
+				dataType: string
+				lineageTag: bc5a412a-82e5-47fd-9f3a-e131a5dd87e0
+				sourceLineageTag: sub_shift
+				summarizeBy: none
+				sourceColumn: sub_shift
+
+				annotation SummarizationSetBy = Automatic
+
+			column meal_time
+				dataType: string
+				lineageTag: 44f2ed51-8349-4586-a954-728ca4e102ed
+				sourceLineageTag: meal_time
+				summarizeBy: none
+				sourceColumn: meal_time
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__time = entity
+				mode: directLake
+				source
+					entityName: dim__time
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__web_page
+			lineageTag: 79663d42-98be-466e-9de4-521dffc81e71
+			sourceLineageTag: [tpc_ds__sf_100].[dim__web_page]
+
+			column _key__dim__web_page
+				dataType: int64
+				formatString: 0
+				lineageTag: e516b2ac-d508-4b88-9350-13f1fe15d852
+				sourceLineageTag: _key__dim__web_page
+				summarizeBy: none
+				sourceColumn: _key__dim__web_page
+
+				annotation SummarizationSetBy = Automatic
+
+			column web_page_id
+				dataType: string
+				lineageTag: 164faf5b-f261-4263-ad4c-318deb97f2cd
+				sourceLineageTag: web_page_id
+				summarizeBy: none
+				sourceColumn: web_page_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column url
+				dataType: string
+				lineageTag: bab16531-088c-4ebc-b568-def96b1342c7
+				sourceLineageTag: url
+				summarizeBy: none
+				sourceColumn: url
+
+				annotation SummarizationSetBy = Automatic
+
+			column page_type
+				dataType: string
+				lineageTag: 38a9168b-8875-4dae-b20d-45d80906db07
+				sourceLineageTag: page_type
+				summarizeBy: none
+				sourceColumn: page_type
+
+				annotation SummarizationSetBy = Automatic
+
+			column autogen_flag
+				dataType: string
+				lineageTag: 7107a128-17d0-4f83-8087-d14f292523a2
+				sourceLineageTag: autogen_flag
+				summarizeBy: none
+				sourceColumn: autogen_flag
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date__creation
+				dataType: int64
+				formatString: 0
+				lineageTag: 4c6eab2c-f2d2-42d9-a560-f01db7251858
+				sourceLineageTag: _key__dim__date__creation
+				summarizeBy: none
+				sourceColumn: _key__dim__date__creation
+
+				annotation SummarizationSetBy = Automatic
+
+			column _key__dim__date__access
+				dataType: int64
+				formatString: 0
+				lineageTag: 85357c89-28c1-43d5-9f25-923faf60a3ed
+				sourceLineageTag: _key__dim__date__access
+				summarizeBy: none
+				sourceColumn: _key__dim__date__access
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__web_page = entity
+				mode: directLake
+				source
+					entityName: dim__web_page
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		table dim__ship_mode
+			lineageTag: 086a2794-7ec9-47b1-b1c7-a92e31035c27
+			sourceLineageTag: [tpc_ds__sf_100].[dim__ship_mode]
+
+			column _key__dim__ship_mode
+				dataType: int64
+				formatString: 0
+				lineageTag: 4e5fe394-2500-43a2-b573-9de41a7d35ec
+				sourceLineageTag: _key__dim__ship_mode
+				summarizeBy: none
+				sourceColumn: _key__dim__ship_mode
+
+				annotation SummarizationSetBy = Automatic
+
+			column ship_mode_id
+				dataType: string
+				lineageTag: 2221a292-65fb-4a91-937d-95716e1e301e
+				sourceLineageTag: ship_mode_id
+				summarizeBy: none
+				sourceColumn: ship_mode_id
+
+				annotation SummarizationSetBy = Automatic
+
+			column ship_mode_type
+				dataType: string
+				lineageTag: e1310323-c923-47a9-941b-f2eb02cfa3e5
+				sourceLineageTag: ship_mode_type
+				summarizeBy: none
+				sourceColumn: ship_mode_type
+
+				annotation SummarizationSetBy = Automatic
+
+			column carrier
+				dataType: string
+				lineageTag: c4819eff-8bd8-408c-8dc6-f2dfecc050ce
+				sourceLineageTag: carrier
+				summarizeBy: none
+				sourceColumn: carrier
+
+				annotation SummarizationSetBy = Automatic
+
+			column contract
+				dataType: string
+				lineageTag: 54573f96-853f-42c3-9069-9c821e1e3afd
+				sourceLineageTag: contract
+				summarizeBy: none
+				sourceColumn: contract
+
+				annotation SummarizationSetBy = Automatic
+
+			partition dim__ship_mode = entity
+				mode: directLake
+				source
+					entityName: dim__ship_mode
+					schemaName: tpc_ds__sf_100
+					expressionSource: 'DirectLake - tpc_ds'
+
+		relationship a3d4a9a1-3ccb-359e-21a9-7c2a304dfd9f
+			fromColumn: _bridge._key__dim__call_center
+			toColumn: dim__call_center._key__dim__call_center
+
+		relationship de095a8e-4c8b-6096-a9b6-d15b40347d51
+			fromColumn: _bridge._key__dim__catalog_page
+			toColumn: dim__catalog_page._key__dim__catalog_page
+
+		relationship 26567f57-a287-7c60-80d8-0072581fd5c9
+			fromColumn: _bridge._key__dim__customer
+			toColumn: dim__customer._key__dim__customer
+
+		relationship 28937611-4912-8f47-c0b9-59d35aba1015
+			fromColumn: _bridge._key__dim__date
+			toColumn: dim__date._key__dim__date
+
+		relationship c5cd8758-5693-05f5-3903-a9e6c9df8c2f
+			fromColumn: _bridge._key__dim__item
+			toColumn: dim__item._key__dim__item
+
+		relationship 05d32fa7-dc07-ac56-1926-ab5ebf41560d
+			fromColumn: _bridge._key__dim__promotion
+			toColumn: dim__promotion._key__dim__promotion
+
+		relationship 67b45ac4-92f5-228e-dafa-d1d4f2e5914b
+			fromColumn: _bridge._key__dim__reason
+			toColumn: dim__reason._key__dim__reason
+
+		relationship 3b0d4cbd-0bf0-10a0-9f22-455f47cf8ae9
+			fromColumn: _bridge._key__dim__store
+			toColumn: dim__store._key__dim__store
+
+		relationship 8af1f9d6-3a0f-3361-7ba8-d0cd18b57e92
+			fromColumn: _bridge._key__dim__warehouse
+			toColumn: dim__warehouse._key__dim__warehouse
+
+		relationship f7272707-37b7-2a12-f9cd-4ef23abdc514
+			fromColumn: _bridge._key__dim__ship_mode
+			toColumn: dim__ship_mode._key__dim__ship_mode
+
+		relationship 9709d3e8-f04c-bd27-05e4-fbaaca37aba9
+			fromColumn: _bridge._key__dim__time
+			toColumn: dim__time._key__dim__time
+
+		relationship bcbbbb35-0564-fe63-fe57-7b88ce35e8be
+			fromColumn: _bridge._key__dim__web_page
+			toColumn: dim__web_page._key__dim__web_page
+
+		relationship b1b2e737-ff01-7667-87e8-4bbe0ea6d185
+			fromColumn: _bridge._key__dim__web_site
+			toColumn: dim__web_site._key__dim__web_site
+
+		relationship 476df0a7-5436-e8b1-83c1-e04a3347afbe
+			fromColumn: _bridge._key__fact__catalog_returns
+			toColumn: fact__catalog_returns._key__fact__catalog_returns
+
+		relationship 7ec0d2c7-9b79-e836-d6eb-bec82cd7f856
+			fromColumn: _bridge._key__fact__catalog_sales
+			toColumn: fact__catalog_sales._key__fact__catalog_sales
+
+		relationship 7276786f-1fb9-640a-e9f5-0cc4de269c70
+			fromColumn: _bridge._key__fact__inventory
+			toColumn: fact__inventory._key__fact__inventory
+
+		relationship 8b055810-852d-ddd2-cbe8-a297ff413ffd
+			fromColumn: _bridge._key__fact__store_returns
+			toColumn: fact__store_returns._key__fact__store_returns
+
+		relationship b6cfa0d7-4320-b427-1fa1-de1540f134dd
+			fromColumn: _bridge._key__fact__store_sales
+			toColumn: fact__store_sales._key__fact__store_sales
+
+		relationship 6d509dd9-1747-5c7f-6173-c10bf2e25f8e
+			fromColumn: _bridge._key__fact__web_returns
+			toColumn: fact__web_returns._key__fact__web_returns
+
+		relationship b887a219-14fa-835f-ae6c-4935ceed8cab
+			fromColumn: _bridge._key__fact__web_sales
+			toColumn: fact__web_sales._key__fact__web_sales
+
+		expression 'DirectLake - tpc_ds' =
+				let
+				    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/YOUR-WORKSPACE_GUID/YOUR-LAKEHOUSE_GUID", [HierarchicalNavigation=true])
+				in
+				    Source
+			lineageTag: d1cffb82-9e87-49e0-9f23-fa270e7d4c73
+
+			annotation PBI_IncludeFutureArtifacts = False
+
+		annotation PBI_QueryOrder = ["DirectLake - tpc_ds"]
+
+		annotation __PBI_TimeIntelligenceEnabled = 1
+
+		annotation __LastRPTime = 134113046117361125
+
+		annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb","WebModelingEdit","TMDLView_Desktop","RemoteModeling"]
+
