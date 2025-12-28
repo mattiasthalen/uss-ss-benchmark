@@ -45,11 +45,11 @@ The benchmark consists of the following DAX queries, designed to test various as
 
 ### Performance by Dataset
 
-![Performance by Dataset](./By%20Dataset.svg)
+![Performance by Dataset](./By%20Dataset.png)
 
 ### Performance by Query
 
-![Performance by Query](./By%20Query.svg)
+![Performance by Query](./By%20Query.png)
 
 ## Methodology
 
