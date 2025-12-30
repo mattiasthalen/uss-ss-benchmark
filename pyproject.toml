@@ -1,0 +1,9 @@
+[project]
+name = "uss-ss-benchmark"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "marimo>=0.18.4",
+]
