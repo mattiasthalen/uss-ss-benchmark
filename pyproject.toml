@@ -1,13 +1,11 @@
 [project]
 name = "uss-ss-benchmark"
 version = "0.1.0"
-description = "Add your description here"
+description = "Benchmark Unified Star Schema against Star Schema in Microsoft Fabric using TPC-DS dataset."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "azure-identity>=1.25.1",
-    "kaleido>=1.2.0",
+    "httpx>=0.28.1",
     "marimo>=0.18.4",
-    "plotly>=6.5.0",
-    "semantic-link-sempy>=0.13.0",
 ]
