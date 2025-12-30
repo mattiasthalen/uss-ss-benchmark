@@ -5,7 +5,22 @@ description = "Benchmark Unified Star Schema against Star Schema in Microsoft Fa
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "altair>=6.0.0",
     "azure-identity>=1.25.1",
-    "httpx>=0.28.1",
+    "duckdb>=1.4.3",
     "marimo>=0.18.4",
+    "mcp>=1",
+    "nbformat",
+    "openai>=2.14.0",
+    "polars[pyarrow]>=1.36.1",
+    "pydantic>=2",
+    "pytest",
+    "python-lsp-ruff>=2.3.0",
+    "python-lsp-server>=1.14.0",
+    "pyzmq>=27.1.0",
+    "ruff>=0.14.10",
+    "sqlglot>=28.5.0",
+    "vegafusion>=2.0.3",
+    "vl-convert-python>=1.9.0",
+    "websockets>=15.0.1",
 ]
