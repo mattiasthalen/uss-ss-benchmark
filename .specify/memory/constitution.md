@@ -1,16 +1,14 @@
 <!--
 Sync Impact Report:
-- Version change: N/A → 1.0.0
-- Modified principles: N/A (initial constitution)
-- Added sections: Core Principles, Benchmarking Standards, Development Workflow, Governance
+- Version change: 1.0.0 → 1.1.0
+- Modified principles: None
+- Added sections: None
 - Removed sections: None
 - Templates requiring updates:
   - ✅ updated: .specify/templates/plan-template.md
-  - ✅ updated: .specify/templates/spec-template.md
-  - ✅ updated: .specify/templates/tasks-template.md
   - ⚠ pending: .specify/templates/commands/*.md (directory missing)
 - Follow-up TODOs:
-  - TODO(RATIFICATION_DATE): original ratification date not found in repository
+  - TODO(RATIFICATION_DATE): original adoption date unknown
 -->
 # USS-SS Benchmark Constitution
 
@@ -47,6 +45,13 @@ Rationale: Fast but wrong results are regressions, not improvements.
   and command.
 Rationale: Simplicity reduces hidden variables; traceability supports auditing.
 
+### VI. Functional Composition
+- Prefer many small, single-purpose, mostly pure functions over large
+  multi-responsibility functions.
+- Side effects and shared mutable state MUST be minimized and isolated.
+- Data flow MUST be explicit, and function composition preferred when possible.
+Rationale: Functional decomposition improves testability and reduces hidden state.
+
 ## Benchmarking Standards
 
 - Each benchmark MUST include a spec describing inputs, expected outputs, and
@@ -74,4 +79,4 @@ Rationale: Simplicity reduces hidden variables; traceability supports auditing.
 - Compliance is reviewed in every plan and PR by checking the Constitution Check
   section in planning docs.
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): original adoption date unknown | **Last Amended**: 2025-12-31
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): original adoption date unknown | **Last Amended**: 2025-12-31

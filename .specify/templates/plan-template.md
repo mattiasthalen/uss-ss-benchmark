@@ -36,6 +36,7 @@
 - Measurement protocol defined: warmup, samples, timing source, aggregation.
 - Correctness plan: tests or validation steps defined before performance work.
 - Traceability: commands and artifact storage locations documented.
+- Functional composition: plan favors small, pure functions with explicit data flow.
 
 ## Project Structure
 
